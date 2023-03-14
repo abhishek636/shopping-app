@@ -24,6 +24,7 @@ class Products extends React.Component{
             return true;
           }
         }
+    
       })
     }
 
