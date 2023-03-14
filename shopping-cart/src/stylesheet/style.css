@@ -1,0 +1,254 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom style */
+
+
+body{
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    margin-top:20px;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.active{
+    background-color: orange;
+}
+
+.size{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 1rem;
+}
+
+.wrapper{
+    position: relative;
+}
+.cart-bag img{
+    background-color: black;
+    width: 50px;
+}
+.cart-bag span{
+    padding: 5px 5px 5px 5px;
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+
+
+
+.cartopener{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: black;
+}
+.cartopener img{
+    width: 42px;
+}
+.cartopener span{
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(212, 187, 27);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart{
+    padding: 50px;
+    background-color: rgba(214, 19, 19, 2);
+    color: white;
+    position: relative;
+}
+.close{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    cursor: pointer;
+    color: red;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.bag{
+    position: relative;
+}
+.bag img{
+    width: 42px;
+}
+.bag span{
+    position: absolute;
+    top: 0;
+    right: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(212, 187, 27);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bagcart{
+    justify-content: center;
+}
+.bagcart h2{
+    font-size: 2rem;
+}
+.block{
+    width: 200px;
+    padding: 10px;
+    font-weight: 700;
+}
+.middel{
+    width: 600px;
+    height: 120px;
+    margin: 20px auto;
+    background-color: rgba(49, 195, 195, 0.2);
+    padding: 10px;
+    align-items: center;
+    color: black;
+    position: relative;
+}
+.middel img{
+    width: 90px;
+}
+.middel .title{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.p-absolute{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.price{
+    font-size: 1.5rem;
+    color: rgb(0, 218, 145);
+    font-weight: 600;
+}
+.btn button{
+    margin: 5px 10px;
+}
+.subtotal{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(99, 183, 3);
+    margin: 20px auto;
+}
+.height{
+    height: 350px;
+}
+
+.p-fixed{
+    position: fixed;
+    top:0;
+    right: 0;
+    width: 100%;
+}
+.p-relative{
+    position: relative;
+}
+.side{
+    position: fixed;
+}
+.side button{
+    margin: 10px;
+}
+.product-item{
+    background-color: antiquewhite;
+    margin: 20px 10px;
+    border: solid red 2px;
+    position: relative;
+}
+.product-item img{
+    height: 380px;
+    background-color: aliceblue;
+}
+.product-item .title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.product-item button{
+    padding: 5px;
+    margin: 10px 0;
+}
+.p-abs{
+    color: red;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: rgba(19, 186, 224, 0.2);
+    padding: 4px;
+}
+.length{
+    font-size: 2rem;
+    font-weight: 600;
+}
